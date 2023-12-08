@@ -3,11 +3,12 @@
 let totalPhones = 30;
 let phoneCost = 119.95;
 let tax = 0.05;
-let totalPrice = phoneCost * totalPhones;
-let taxFee = totalPrice / tax;
-let fully = taxFee;
+
+let totalCostWithNoTax = phoneCost * totalPhones;
+let taxAndTotalCost = totalCostWithNoTax * tax;
+let fullyCostWithTax = totalCostWithNoTax + taxAndTotalCost;
 console.log('The total price of 30 phones is:');
-console.log(totalPrice);
+console.log(fullyCostWithTax);
 
 // 2. Write a JavaScript program that takes minutes and converts them to seconds. Print the result in the console.
 let minute = 13;
