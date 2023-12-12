@@ -17,3 +17,4 @@ else if(firstUser >= 100){
 else{
     alert('Please enter a valid input');
 }
+
